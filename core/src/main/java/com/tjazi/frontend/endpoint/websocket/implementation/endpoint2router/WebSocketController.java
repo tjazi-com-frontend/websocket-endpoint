@@ -30,7 +30,7 @@ public class WebSocketController {
         log.debug("[WebSocketController] Received payload: " + chatMessage.getPayload());
 
         log.debug("[WebSocketController] Sending message to all subscribers...");
-        //messagingTemplate.convertAndSend("/topic", chatMessage);
-        webSocket2Router.passWebSocketMessageToRouter(chatMessage);
+        messagingTemplate.convertAndSend("/topic", chatMessage);
+        //webSocket2Router.passWebSocketMessageToRouter(chatMessage);
     }
 }
