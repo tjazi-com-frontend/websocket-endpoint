@@ -11,7 +11,8 @@ import java.util.List;
 /**
  * Created by Krzysztof Wasiak on 06/04/2016.
  *
- * Router to Endpoint interface implementation
+ * Router to Endpoint interface implementation.
+ * This will be called from the Endpoint module, once message from router arrives
  */
 @Service
 public class WebSocketEndpointImplementation implements IRoutingEndpointCoreImplementation {
